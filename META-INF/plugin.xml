@@ -8,8 +8,8 @@
   <actions>
     <action id="ToolWindowClosure"
         class="siosio.toolwindow.ToolWindowCloseActionGroup">
-      <add-to-group group-id="WindowMenu" anchor="after"
-          relative-to-action="ActiveToolwindowGroup" />
+      <add-to-group group-id="ActiveToolwindowGroup" anchor="after"
+          relative-to-action="JumpToLastWindow" />
     </action>
   </actions>
 
