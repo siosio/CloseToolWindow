@@ -1,0 +1,16 @@
+<idea-plugin version="2">
+  <name>CloseToolWindow</name>
+  <description>short description of the plugin</description>
+  <version>1.0</version>
+  <vendor>siosio</vendor>
+  <idea-version since-build="107.105" />
+
+  <actions>
+    <action id="ToolWindowClosure"
+        class="siosio.toolwindow.ToolWindowCloseActionGroup">
+      <add-to-group group-id="WindowMenu" anchor="after"
+          relative-to-action="ActiveToolwindowGroup" />
+    </action>
+  </actions>
+
+</idea-plugin>
