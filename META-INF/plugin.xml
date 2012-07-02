@@ -1,16 +1,19 @@
 <idea-plugin version="2">
   <name>CloseToolWindow</name>
-  <description>short description of the plugin</description>
+  <description>Tool Window Close plugin.</description>
   <version>1.0</version>
   <vendor>siosio</vendor>
   <idea-version since-build="107.105" />
 
   <actions>
-    <action id="ToolWindowClosure"
-        class="siosio.toolwindow.ToolWindowCloseActionGroup">
-      <add-to-group group-id="ActiveToolwindowGroup" anchor="after"
-          relative-to-action="JumpToLastWindow" />
-    </action>
+    <group id="CloseToolWindow" text="Close Tool Window" popup="true">
+      <action id="BottomToolWindowClose" class="siosio.toolwindow.BottomToolWindowCloseAction"
+          text="Close Bottom Tool Window" />
+      <action id="LeftToolWindowClose" class="siosio.toolwindow.LeftToolWindowCloseAction"
+          text="Close Left Tool Window" />
+      <action id="RightToolWindowClose" class="siosio.toolwindow.RightToolWindowCloseAction"
+          text="Close Right Tool Window" />
+      <add-to-group group-id="ActiveToolwindowGroup" anchor="after" relative-to-action="JumpToLastWindow" />
+    </group>
   </actions>
-
 </idea-plugin>
